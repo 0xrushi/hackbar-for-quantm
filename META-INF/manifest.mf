@@ -1,0 +1,387 @@
+Manifest-Version: 1.0
+
+Name: manifest.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: JuPIHUD9i4qFEz/Zai+0Xg==
+SHA1-Digest: UTo6syTmc8e8S4oZaDwUtAYxaLU=
+
+Name: README.md
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: S3iBA7O9ZqiGiwcMIr2QcQ==
+SHA1-Digest: Yco7d/W3Q+Z7Z7jMeVRBLMvUgoU=
+
+Name: hackbar/background.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 8MJd5/NswPC34xJXUTMNEA==
+SHA1-Digest: 2Z0bC50l9conddu06hsaurn2GF8=
+
+Name: hackbar/custom.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: irrT9Cu96ZQeFHx8n6B0ZQ==
+SHA1-Digest: tPuzxkaHSRJ8riQSlbrloWQKmWk=
+
+Name: hackbar/Encrypt.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: moTsRx8zoy6iIG02egq5KQ==
+SHA1-Digest: AaXt/tCFf42hZBk7GgkPr2OKtzw=
+
+Name: hackbar/hackbar.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Er15AD1rVL2QjHwwy/pxZg==
+SHA1-Digest: LOtuXKbqBJ2bQ0iau0HoLeEWLaY=
+
+Name: hackbar/hackbar.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Kkev3xiaWmHn5G7FJlzKvA==
+SHA1-Digest: l1IjiYcxkbV+9MiX2HJ6jstdHH4=
+
+Name: hackbar/hackbar.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PFFu4sESZGOy4gYPg9QhMg==
+SHA1-Digest: /e4hCCmWGf70dOsNceFP8Qb+mh4=
+
+Name: hackbar/polyglot.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: LX7SF2nmznEfLUd6ndYrAA==
+SHA1-Digest: H9PJgU3/7968AY4bhrvnpmpo7Uk=
+
+Name: hackbar/post.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: rAFgO4youlSskR9OFtal8A==
+SHA1-Digest: 6GiSow5LFNK3ueHJHTw4XvV4Nx0=
+
+Name: hackbar/SQL.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: jhBXxVbvUC9f7CDPALaxYw==
+SHA1-Digest: 0DgPyB3KtepMUSaT84c9XXxzW5Q=
+
+Name: hackbar/test.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: lTW0QjczNkWgI4FTBcgd8Q==
+SHA1-Digest: PsWOuufWUi0o+WDh+4wIBkSnYr0=
+
+Name: hackbar/bootstrap/css/bootstrap-grid.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: FA2yp/5/+2O0YI5ovtiftg==
+SHA1-Digest: 3NYcUSh+tvkijzFdiKqEcHxFgjs=
+
+Name: hackbar/bootstrap/css/bootstrap-grid.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: OxiLhkaoFrnAh0+jFHcLQg==
+SHA1-Digest: xv3xeJg7KQquNbGokJbCsOVOFmA=
+
+Name: hackbar/bootstrap/css/bootstrap-grid.min.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: OazJ8OG8GpnoiI+1WwrhHQ==
+SHA1-Digest: QzkbCL5JiF99+70RPl3P/wt0q7Q=
+
+Name: hackbar/bootstrap/css/bootstrap-grid.min.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: zK4LEsR0vNvNxTuUJE2fuw==
+SHA1-Digest: A2HDasyo7LsO1ThRJugX+wdMepg=
+
+Name: hackbar/bootstrap/css/bootstrap-reboot.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: nOeVUASYPvSU93NGOpF6TQ==
+SHA1-Digest: 3/0Ysy5tgnvXBNW6zqi1+zdr42s=
+
+Name: hackbar/bootstrap/css/bootstrap-reboot.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: qFZJYCE9+TOuyViubySh4g==
+SHA1-Digest: 7qH93NoxQoQAWjhWD9r53ZS1S3M=
+
+Name: hackbar/bootstrap/css/bootstrap-reboot.min.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: kJX13o2TbzKNS0EO4WVAnw==
+SHA1-Digest: JdrMcNd3FkxiFsIvTsbbgT0BY8Y=
+
+Name: hackbar/bootstrap/css/bootstrap-reboot.min.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: OMlp7JICowW+RrxQu+UNkw==
+SHA1-Digest: yYFQWt+IuZSmjaSHgM5hIwU0LXI=
+
+Name: hackbar/bootstrap/css/bootstrap.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PmIN7xT3f+Ti++A0ruFJ9A==
+SHA1-Digest: B088CdOv1p86A7yfRME8E7hsYPA=
+
+Name: hackbar/bootstrap/css/bootstrap.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: w2tyd4EnqO3zujZ8ShKIqg==
+SHA1-Digest: I5VCFOMm7h9FvxJbg6I+XGpMH64=
+
+Name: hackbar/bootstrap/css/bootstrap.min.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: LDwnuJlK9Rdxjk69zfEuOA==
+SHA1-Digest: 6SgIMkGfLDfvOH7Ho5eMemfIFqc=
+
+Name: hackbar/bootstrap/css/bootstrap.min.css.map
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: a22scLSPTh2CI/OD1YsZdg==
+SHA1-Digest: eyRVjq0Yb19Pa+fXjR9QOhrzHAs=
+
+Name: hackbar/bootstrap/js/bootstrap.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ur9MsDMMBofQMyvOWN/+FA==
+SHA1-Digest: rtQAfimN2UoKz4FgICL5O+1Ecn8=
+
+Name: hackbar/bootstrap/js/bootstrap.min.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: CCegvc2akXmQ7uRhp33TPg==
+SHA1-Digest: YQfRRuVKZ8mZgjCr+DkwFXXQVwI=
+
+Name: hackbar/bootstrap/js/jquery.min.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yfWu7KOtN78qoAYTm5NfCg==
+SHA1-Digest: EFUBjCirQQh++czv5BFgaJPavqI=
+
+Name: hackbar/skin/addslashes.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: lUgytBSlVgfqUaV5+z+7JQ==
+SHA1-Digest: b+VaYR+dMOtz0cHOtjBxZP6SIAU=
+
+Name: hackbar/skin/basic.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 2SlGDuDVTPSdcHs/4rpnQg==
+SHA1-Digest: HKFA3/MV233AFiHZiej6CpJTdGI=
+
+Name: hackbar/skin/binary.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: oBrR7qh/A2R4T2Phvebucw==
+SHA1-Digest: Ugd20TGu9HExeHIC1eGg2WR6DXM=
+
+Name: hackbar/skin/binaryd.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Uy2yIO2I6BM0E8TXjhO6uQ==
+SHA1-Digest: yiIZFthSuKjJEhQNyapF16jjafE=
+
+Name: hackbar/skin/columns.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: bR4r9iJYx/6L+qW7oZqfCw==
+SHA1-Digest: z+09mi/3VbbfWoWSmA9U/qy/FxA=
+
+Name: hackbar/skin/convert.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: sfb92SQQMFWhWAsok2A7Uw==
+SHA1-Digest: e940VM4de+OhVv2i/Ykfe0hCK4E=
+
+Name: hackbar/skin/data.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: fhOWC03IAFc74UWMqyBZlg==
+SHA1-Digest: QWuX5SWRA16kmrz7/5cMZmjfGUM=
+
+Name: hackbar/skin/database.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 1pil6adVqXtR5lclaIG73g==
+SHA1-Digest: jwAV6MCea2vjYdx6EDmmoDiRdd4=
+
+Name: hackbar/skin/database_convert.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: sFHtjWkyZ5IGRrXbTaGBQA==
+SHA1-Digest: ba2NxMuTKkgyJkwW/VepI1wbN0U=
+
+Name: hackbar/skin/db.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Ow5YOMZouFbWu7uAuoNZtQ==
+SHA1-Digest: qI6zEch6kY1kpyZgrOdTZD8neA4=
+
+Name: hackbar/skin/downarrow.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: fwjZRaNgQ40KhMSRs3vG3A==
+SHA1-Digest: 94jtEF/LbPgI/XlQywNewYtTu70=
+
+Name: hackbar/skin/downarrow2.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: UDZxy0S0Tgu4SMZhbjsHkw==
+SHA1-Digest: 6I9cTmWseiUmG1JkCVGjdnvfbB8=
+
+Name: hackbar/skin/encryption.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: tQhBG7kV7PMrGplWRPZ/0Q==
+SHA1-Digest: wetnhKHS7U3IviBXlN5QrMMUQBo=
+
+Name: hackbar/skin/encryption_weak.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 73FBQAuycbYfgG/rnKafZw==
+SHA1-Digest: lsjk3uML6AwCPYBw3WCRJd/Zn6M=
+
+Name: hackbar/skin/extract.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: mt2MeNmmdOZmjvNlnsukBQ==
+SHA1-Digest: e1Ct/9LIyRYlwhvocNnpeSUFBa0=
+
+Name: hackbar/skin/hackbar_icon.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0gjSx7VaLzm1nEWLnGIPTg==
+SHA1-Digest: mbpcTvw09Ko0wtmOY34PSTUZdXU=
+
+Name: hackbar/skin/hex.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: rj04y+yN055/LS/FmXmgag==
+SHA1-Digest: +EjbTE/tRlR6PQ5vWy/J3rntMSM=
+
+Name: hackbar/skin/hexd.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: bDpBkt8x4V/8bwIyNG3aKg==
+SHA1-Digest: PeeM6HQU/lsm8fufmXeaVnn1STI=
+
+Name: hackbar/skin/icon.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ejo+4nIXPr6HmpOTnV51IQ==
+SHA1-Digest: OTHwhz7XgFTEtsHTQ2uhOxeqZtQ=
+
+Name: hackbar/skin/load.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: aZbNwMkxImaL3d8tk4MnhQ==
+SHA1-Digest: jFwyiLF50xsPv+3dpm54677qC4I=
+
+Name: hackbar/skin/minus.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: meG+36bH3x3SE3y4bo/5Ew==
+SHA1-Digest: EaXkxvvwG1wyQBBoAoXNv+qzAH0=
+
+Name: hackbar/skin/mssql.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 67LvtRkQXtfVgVETyzF5NA==
+SHA1-Digest: aYqvRrdxGyt6Dohr23MLzrVSJo8=
+
+Name: hackbar/skin/mysql.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MTroEJvvdBD+oiLzJMAq8w==
+SHA1-Digest: LDtosFuxt3WEbrdiQ4a7TLMgU5Q=
+
+Name: hackbar/skin/orsql.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AW4836yiczSFMKGVTkiFuw==
+SHA1-Digest: ihRJU9F7dVb3c8OXqW+bl14wa4g=
+
+Name: hackbar/skin/plus.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +Ltmgm6+0brOwdMxKPGKyg==
+SHA1-Digest: 8AkarvdzmlwMMTZjNxsqp0Hr7p4=
+
+Name: hackbar/skin/quick1.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: giTyVoeEuEgczsy7JbBScQ==
+SHA1-Digest: JnwxEbDCROqaRAgehwkKpDp9Mhs=
+
+Name: hackbar/skin/quick2.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 80/ogTqP8U8z8yDKLrKzWA==
+SHA1-Digest: S0WuGDUBxrB0QTb+t5EU3PF5JVU=
+
+Name: hackbar/skin/quick3.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: e6XT0o08vGSmy6T0mof9Cg==
+SHA1-Digest: PjI9GIRFbODJQyQ/cMLApgfBzFw=
+
+Name: hackbar/skin/replace.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ZD09uTylpP37sa94+9uc8g==
+SHA1-Digest: FvLCpcqYf6WfaAhqMwXlrHpHt8U=
+
+Name: hackbar/skin/reverse.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: WqdqxbawmhRj0Z6If2pbqg==
+SHA1-Digest: FspYpTJ4USF00O7rScpvLhG4RcY=
+
+Name: hackbar/skin/rightarrow.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: o8Co1J8tvbrD62ufjAD7pQ==
+SHA1-Digest: 5FPkJN99uXQ0QNfpAffKJwOnZgQ=
+
+Name: hackbar/skin/s.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /L3WTTKjWBuC6KhLCOniew==
+SHA1-Digest: nuMqaR7ii0BFzy8wv5iwo0VQ6Zo=
+
+Name: hackbar/skin/split.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 7VfrhE8G/vFDn3hZJZXi4A==
+SHA1-Digest: 3HC/VHcamTDoZ1gfPqwuW9o5fCk=
+
+Name: hackbar/skin/string.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BMwF+K4trQjAcFzAKWeMoQ==
+SHA1-Digest: NdyL0gjoHEFsnK9BogTIVTx9CGU=
+
+Name: hackbar/skin/string1.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: rC/mHSQfJ7HgSwSyP1+NsQ==
+SHA1-Digest: 4LCtcX9QCT7KhIg+L/hTtNKqjQY=
+
+Name: hackbar/skin/stripslashes.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yDzHvkUQrJh0hEM8luhExQ==
+SHA1-Digest: OUkoLOAcDcMVIO+x6LlxJSLpP7o=
+
+Name: hackbar/skin/stripspaces.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 74qlm9T0ZpgpyHoYDZ9Gdg==
+SHA1-Digest: eeffzOTEwUmQy1nawQuHr4VGMWQ=
+
+Name: hackbar/skin/tables.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: tYN20E/NtUEhrjsxmhocKg==
+SHA1-Digest: Q8n4rm2513NxqijNMYdcqkDIx54=
+
+Name: hackbar/skin/urld.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xX0m5m7oHJdQo1JmMp+xWg==
+SHA1-Digest: K2BvmWOFwEOS9TSKNJpET1wcziM=
+
+Name: hackbar/skin/urle.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: pdyDGb/wGIVe4EQeSjtUuQ==
+SHA1-Digest: 8WGfw5oYc7+KrBVExegUIYjJgG8=
+
+Name: hackbar/skin/uud.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: i3tXsr6h2OoOKivxTb+zpQ==
+SHA1-Digest: NgzCS3U60K+QyTWJuJYPJvPP0yc=
+
+Name: hackbar/skin/uue.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: GbVv96G41lWSfhhpTXxyWg==
+SHA1-Digest: Pcodb/5o0ho5QZcgZJajAaFKmlQ=
+
+Name: hackbar/skin/waf_set.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /UAmyoVwAdGhdevmhCqhPg==
+SHA1-Digest: O+L7BcO7Foa2DK2jrwk76G0Fr5Q=
+
+Name: hackbar/skin/web.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: VvVJVMwMVTfhfXPAOzvTbg==
+SHA1-Digest: Hc3a4SCzVs1UJh4HxvCtAPtyrw0=
+
+Name: hackbar/skin/xss.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: tv2RxqilEDk7Xn99x5WgUA==
+SHA1-Digest: nSRwxwcC+hVCJ2jlWI6u9EEnx+c=
+
+Name: hackbar/skin/xss_alert.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yEfhB22nDfg+9ShGIrgqdA==
+SHA1-Digest: OFV1To/JMxxn3S0Hidny1ufaros=
+
+Name: icons/hackbar_16.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0gjSx7VaLzm1nEWLnGIPTg==
+SHA1-Digest: mbpcTvw09Ko0wtmOY34PSTUZdXU=
+
+Name: icons/hackbar_32.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: TkvO+yn9YV3SME0IOe6BVg==
+SHA1-Digest: 9e8/wsc3DW5GiK9EzBLLX5ztjdc=
+
+Name: icons/hackbar_48.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ejo+4nIXPr6HmpOTnV51IQ==
+SHA1-Digest: OTHwhz7XgFTEtsHTQ2uhOxeqZtQ=
+
+Name: LICENSE
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: l0HDRu71YTEWPhO52xJBsw==
+SHA1-Digest: 0iFXq8D8C0rpY4DAlSjiPPdykKk=
+

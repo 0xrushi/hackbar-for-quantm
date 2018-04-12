@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hackbar.css" >
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <div>
+        <nav id="primary_nav_wrap">
+            <ul>
+                <li><a class="orange downarrow" name="INT">INT</a>
+                    <ul class="dropdown-content">
+                        <li><a name="sint" style="background: url('skin/encryption.png');background-repeat: no-repeat;">INT</a></li>
+                        <li><a name="shex" style="background: url('skin/encryption.png');background-repeat: no-repeat;">HEX</a></li>
+                        <li><a name="soct" style="background: url('skin/encryption.png');background-repeat: no-repeat;">OCT</a></li>
+                        <li><a name="salphabet" style="background: url('skin/encryption_weak.png');background-repeat: no-repeat;">ALPHABET</a></li>
+                        <li><a name="salnum" style="background: url('skin/encryption_weak.png');background-repeat: no-repeat;">ALNUM</a></li>
+                    </ul>
+                </li>
+                <li><a class="grey downarrow" name="encryptionmenu">Encryption</a>
+                    <ul class="dropdown-content">
+                        <li><a name="md5hash" style="background: url('skin/encryption.png');background-repeat: no-repeat;">MD5 Hash</a></li>
+                        <li><a name="sha1hash" style="background: url('skin/encryption.png');background-repeat: no-repeat;">SHA1 Hash</a></li>
+                        <li><a name="sha256hash" style="background: url('skin/encryption.png');background-repeat: no-repeat;">SHA-256 Hash</a></li>
+                        <li><a name="rot13" style="background: url('skin/encryption_weak.png');background-repeat: no-repeat;">ROT13</a></li>
+                    </ul>
+                </li>
+                <li><a class="grey downarrow" name="encodingmenu">Encoding</a>
+                    <ul class="dropdown-content">
+                        <li><a name="base64encode" style="background: url('skin/uue.png');background-repeat: no-repeat;">Base64 Encode</a></li>
+                        <li><a name="base64decode" style="background: url('skin/uud.png');background-repeat: no-repeat;">Base64 Decode</a></li>
+                        <li><a name="urlencode" style="background: url('skin/urle.png');background-repeat: no-repeat;">Url Encode</a></li>
+                        <li><a name="urldecode" style="background: url('skin/urld.png');background-repeat: no-repeat;">Url Decode</a></li>
+                        <li><a name="hexencode" style="background: url('skin/hex.png');background-repeat: no-repeat;">Hex Encode</a></li>
+                        <li><a name="hexdecode" style="background: url('skin/hexd.png');background-repeat: no-repeat;">Hex Decode</a></li>
+                        <li><a name="binaryencode" style="background: url('skin/binary.png');background-repeat: no-repeat;">Binary Encode</a></li>
+                        <li><a name="binarydecode" style="background: url('skin/binaryd.png');background-repeat: no-repeat;">Binary Decode</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id>
+        <nav id="primary_nav_wrap">
+            <ul>
+                <li><a class="grey downarrow" name="othermenu">Other</a>
+                    <ul class="dropdown-content">
+                        <li><a name="stripslashes" style="background: url('skin/stripslashes.png');background-repeat: no-repeat;">Strip Slashes (/)</a></li>
+                        <li><a name="stripspaces" style="background: url('skin/stripspaces.png');background-repeat: no-repeat;">Strip Spaces</a></li>
+                        <li><a name="stripcustom" style="background: url('skin/replace.png');background-repeat: no-repeat;">Strip Custom</a></li>
+                        <li><a name="extractlinks" style="background: url('skin/extract.png');background-repeat: no-repeat;">Extract Links</a></li>
+                        <li><a name="extractcomments" style="background: url('skin/extract.png');background-repeat: no-repeat;">Extract Comments</a></li>
+                        <li><a name="extractregexp" style="background: url('skin/extract.png');background-repeat: no-repeat;">Extract RegExp</a></li>
+                        <li><a name="strreverse" style="background: url('skin/reverse.png');background-repeat: no-repeat;">Reverse String</a></li>
+                    </ul>
+                </li>
+                <li><a class="grey downarrow" name="xssmenu">XSS</a>
+                    <ul class="dropdown-content">
+                        <li><a name="strcharcode" style="background: url('skin/xss.png');background-repeat: no-repeat;">String. fromCharCode</a></li>
+                        <li><a name="htmlchars" style="background: url('skin/xss.png');background-repeat: no-repeat;">HTML Characters</a></li>
+                        <li><a name="xssalert" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">XSS Alert</a></li>
+                        <li><a name="autoxsspoly" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Auto-XSS (Polyglot)</a></li>
+                        <li><a name="autoxsscustom" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Auto-XSS (Custom)</a></li>
+
+                        <li><a class="rightarrow" name="unstmt">XSS Cheat Sheet</a>
+                        <ul class="dropdown-content2">
+                            <li><a name="xs0" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 1.</a></li>
+							<li><a name="xs1" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 2.</a></li>
+							<li><a name="xs2" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 3.</a></li>
+							<li><a name="xs3" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 4.</a></li>
+							<li><a name="xs4" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 5.</a></li>
+							<li><a name="xs5" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 6.</a></li>
+							<li><a name="xs6" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 7.</a></li>
+							<li><a name="xs7" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 8.</a></li>
+							<li><a name="xs8" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 9.</a></li>
+							<li><a name="xs9" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 10.</a></li>
+							<li><a name="xs10" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 11.</a></li>
+							<li><a name="xs11" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 12.</a></li>
+							<li><a name="xs12" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 13.</a></li>
+							<li><a name="xs13" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 14.</a></li>
+							<li><a name="xs14" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 15.</a></li>
+							<li><a name="xs15" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 16.</a></li>
+							<li><a name="xs16" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 17.</a></li>
+							<li><a name="xs17" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 18.</a></li>
+							<li><a name="xs18" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 19.</a></li>
+							<li><a name="xs19" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 20.</a></li>
+							<li><a name="xs20" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 21.</a></li>
+							<li><a name="xs21" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 22.</a></li>
+							<li><a name="xs22" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 23.</a></li>
+							<li><a name="xs23" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 24.</a></li>
+							<li><a name="xs24" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 25.</a></li>
+							<li><a name="xs25" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 26.</a></li>
+							<li><a name="xs26" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 27.</a></li>
+							<li><a name="xs27" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 28.</a></li>
+							<li><a name="xs28" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 29.</a></li>
+							<li><a name="xs29" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 30.</a></li>                    
+                        </ul>
+                        </li> 
+
+                        <li><a class="rightarrow" name="xss-cont">XSS contd.</a>
+                        <ul class="dropdown-content2">        
+                            <li><a name="xs31" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 31.</a></li>
+                            <li><a name="xs32" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 32.</a></li>
+                            <li><a name="xs33" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 33.</a></li>
+                            <li><a name="xs34" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 34.</a></li>
+                            <li><a name="xs35" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 35.</a></li>
+                            <li><a name="xs36" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 36.</a></li>
+                            <li><a name="xs37" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 37.</a></li>
+                            <li><a name="xs38" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 38.</a></li>
+                            <li><a name="xs39" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 39.</a></li>
+                            <li><a name="xs40" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 40.</a></li>
+                            <li><a name="xs41" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 41.</a></li>
+                            <li><a name="xs42" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 42.</a></li>
+                            <li><a name="xs43" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 43.</a></li>
+                            <li><a name="xs44" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 44.</a></li>
+                            <li><a name="xs45" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 45.</a></li>
+                            <li><a name="xs46" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 46.</a></li>
+                            <li><a name="xs47" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 47.</a></li>
+                            <li><a name="xs48" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 48.</a></li>
+                            <li><a name="xs49" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 49.</a></li>
+                            <li><a name="xs50" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 50.</a></li>
+                            <li><a name="xs51" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 51.</a></li>
+                            <li><a name="xs52" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 52.</a></li>
+                            <li><a name="xs53" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 53.</a></li>
+                            <li><a name="xs54" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 54.</a></li>
+                            <li><a name="xs55" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 55.</a></li>
+                            <li><a name="xs56" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 56.</a></li>
+                            <li><a name="xs57" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 57.</a></li>
+                            <li><a name="xs58" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 58.</a></li>
+                            <li><a name="xs59" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 59.</a></li>
+                            <li><a name="xs60" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 60.</a></li>
+                            <li><a name="xs61" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 61.</a></li>
+                            <li><a name="xs62" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 62.</a></li>
+                            <li><a name="xs63" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 63.</a></li>
+                            <li><a name="xs64" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 64.</a></li>
+                            <li><a name="xs65" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 65.</a></li>
+                            <li><a name="xs66" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 66.</a></li>
+                            <li><a name="xs67" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 67.</a></li>
+                            <li><a name="xs68" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 68.</a></li>
+                            <li><a name="xs69" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 69.</a></li>
+                            <li><a name="xs70" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 70.</a></li>
+                            <li><a name="xs71" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 71.</a></li>
+                            <li><a name="xs72" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 72.</a></li>
+                            <li><a name="xs73" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 73.</a></li>
+                            <li><a name="xs74" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 74.</a></li>
+                            <li><a name="xs75" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 75.</a></li>
+                            <li><a name="xs76" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 76.</a></li>
+                            <li><a name="xs77" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 77.</a></li>
+                            <li><a name="xs78" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 78.</a></li>
+                            <li><a name="xs79" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 79.</a></li>
+                            <li><a name="xs80" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 80.</a></li>
+                            <li><a name="xs81" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 81.</a></li>
+                            <li><a name="xs82" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 82.</a></li>
+                            <li><a name="xs83" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 83.</a></li>
+                            <li><a name="xs84" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 84.</a></li>
+                            <li><a name="xs85" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 85.</a></li>
+                            <li><a name="xs86" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 86.</a></li>
+                            <li><a name="xs87" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 87.</a></li>
+                            <li><a name="xs88" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 88.</a></li>
+                            <li><a name="xs89" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 89.</a></li>
+                            <li><a name="xs90" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 90.</a></li>
+                            <li><a name="xs91" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 91.</a></li>
+                            <li><a name="xs92" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 92.</a></li>
+                            <li><a name="xs93" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 93.</a></li>
+                            <li><a name="xs94" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 94.</a></li>
+                            <li><a name="xs95" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 95.</a></li>
+                            <li><a name="xs96" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 96.</a></li>
+                            <li><a name="xs97" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 97.</a></li>
+                            <li><a name="xs98" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 98.</a></li>
+                            <li><a name="xs99" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 99.</a></li>
+                            <li><a name="xs100" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 100.</a></li>
+                            <li><a name="xs101" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 101.</a></li>
+                            <li><a name="xs102" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 102.</a></li>
+                            <li><a name="xs103" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 103.</a></li>
+                            <li><a name="xs104" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 104.</a></li>
+                            <li><a name="xs105" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 105.</a></li>
+                            <li><a name="xs106" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 106.</a></li>
+                            <li><a name="xs107" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 107.</a></li>
+                            <li><a name="xs108" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 108.</a></li>
+                            <li><a name="xs109" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 109.</a></li>
+                            <li><a name="xs110" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 110.</a></li>
+                            <li><a name="xs111" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 111.</a></li>
+                            <li><a name="xs112" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 112.</a></li>
+                            <li><a name="xs113" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 113.</a></li>
+                            <li><a name="xs114" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 114.</a></li>
+                            <li><a name="xs115" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 115.</a></li>
+                            <li><a name="xs116" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 116.</a></li>
+                            <li><a name="xs117" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 117.</a></li>
+                            <li><a name="xs118" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 118.</a></li>
+                            <li><a name="xs119" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 119.</a></li>
+                            <li><a name="xs120" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 120.</a></li>
+                            <li><a name="xs121" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 121.</a></li>
+                            <li><a name="xs122" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 122.</a></li>
+                            <li><a name="xs123" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 123.</a></li>
+                            <li><a name="xs124" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 124.</a></li>
+                            <li><a name="xs125" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 125.</a></li>
+                            <li><a name="xs126" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 126.</a></li>
+                            <li><a name="xs127" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 127.</a></li>
+                            <li><a name="xs128" style="background: url('skin/xss_alert.png');background-repeat: no-repeat;">Payload 128.</a></li>
+                        </ul>                	
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a class="grey downarrow" name="sqlmenu">SQL</a>
+                    <ul class="dropdown-content">
+                        <li class="rightarrow"><a name="convt_stmts" style="background: url('skin/database.png');background-repeat: no-repeat;">Convert Statements</a>
+                            <ul class="dropdown-content" style="right: 110px; left: auto;">
+                                <li><a name="convutf" style="background: url(skin/database_convert.png);background-repeat: no-repeat;">Convert using UTF-8</a></li>
+                                <li><a name="convlat" style="background: url(skin/database_convert.png);background-repeat: no-repeat;">Convert using Latin1</a></li>
+                                <li><a name="cast" style="background: url(skin/database.png);background-repeat: no-repeat;">CAST()</a></li>
+                                <li><a name="unhx" style="background: url(skin/reverse.png);background-repeat: no-repeat;">unhex(hex())</a></li>
+                                <li><a name="uncmp" style="background: url(skin/reverse.png);background-repeat: no-repeat;">uncompress (compress())</a></li>
+                            </ul>
+                        </li>
+                        <li class="rightarrow"><a name="char">CHAR()</a>
+                            <ul class="dropdown-content" style="right: 110px; left: auto;">
+                                <li><a name="mysqlchar">MySql CHAR()</a></li>
+                                <li><a name="mssqlchar">MsSql CHAR()</a></li>
+                                <li><a name="oraclechar">Oracle CHAR()</a></li>
+                            </ul>
+                        </li>
+                        <li class="rightarrow"><a name="char">Replace whitespace</a>
+                            <ul class="dropdown-content" style="right: 110px; left: auto;">
+                                <li><a name="plus" style="background: url('skin/s.png');background-repeat: no-repeat;">+</a></li>
+                                <li><a name="comment" style="background: url('skin/s.png');background-repeat: no-repeat;">/**/</a></li>
+                                <li><a name="clr" style="background: url('skin/s.png');background-repeat: no-repeat;">clear</a></li>
+                            </ul>
+                        </li>
+                        <li class="rightarrow"><a name="char">System variables</a>
+                            <ul class="dropdown-content" style="right: 110px; left: auto;">
+                                <li><a name="cit">CASE INTENSIV TABLES</a></li>
+                                <li><a name="cis">CASE INTENSIV SYSTEM</a></li>
+                                <li><a name="coll-set">COLLATION SET</a></li>
+                                <li><a name="hn">HOST NAME</a></li>
+                                <li><a name="inndb">INNODB</a></li>
+                                <li><a name="opertrs">OPERATORS</a></li>
+                                <li><a name="portsql">PORT SQL</a></li>
+                                <li><a name="recoption">RECOVER OPTIONS</a></li>
+                                <li><a name="sot">SERVER OS TYPE</a></li>
+                                <li><a name="syml">SYMLINK</a></li>
+                                <li><a name="toc">TIMEOUT CONNECTION</a></li>
+                                <li><a name="tow">TIMEOUT WAIT</a></li>
+                            </ul>
+                        </li>  
+                        <li class="rightarrow"><a name="other">OTHER</a>
+                            <ul class="dropdown-content" style="right: 110px; left: auto;">
+                                <li><a name="lpad" style="background: url('skin/string1.png');background-repeat: no-repeat;">LPAD()</a></li>
+                                <li><a name="repe" style="background: url('skin/string1.png');background-repeat: no-repeat;">REPEAT()</a></li>
+                                <li><a name="ifs" style="background: url('skin/string1.png');background-repeat: no-repeat;">IF statement</a></li>
+                                <li><a name="csw" style="background: url('skin/string1.png');background-repeat: no-repeat;">CASE WHEN THEN</a></li>
+                            </ul>
+                        </li>                          
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+         <nav id="primary_nav_wrap">
+            <ul>
+                <li><a class="downarrow2 grey" name="unbased">UNION BASED</a>
+                    <ul class="dropdown-content">   
+                        <li><a class="rightarrow" name="colcnt">COLUMN COUNT</a>
+                        <ul class="dropdown-content">
+                            <li><a name="ob1" style="background: url('skin/basic.png');background-repeat: no-repeat;">ORDER BY</a></li>
+                            <li><a name="gb1" style="background: url('skin/basic.png');background-repeat: no-repeat;">GROUP BY</a></li>
+                            <li><a name="pa1" style="background: url('skin/basic.png');background-repeat: no-repeat;">PROCEDURE ANALYSE()</a></li>
+                            <li><a name="s*s1" style="background: url('skin/basic.png');background-repeat: no-repeat;">(SELECT*FROM*)=SELECT(1)</a></li>
+                        </ul>
+                        </li>
+                        
+                        <li><a class="rightarrow" name="unstmt">UNION STATEMENT</a>
+                        <ul class="dropdown-content">
+                            <li><a name="int1" style="background: url('skin/basic.png');background-repeat: no-repeat;">INT,INT</a></li>
+                            <li><a name="null1" style="background: url('skin/basic.png');background-repeat: no-repeat;">NULL,NULL</a></li>
+                            <li><a name="int2" style="background: url('skin/basic.png');background-repeat: no-repeat;">(INT),(INT)</a></li>
+                        </ul>
+                        </li>
+                        
+                        <li><a class="rightarrow" name="unstmt">BASIC Statements</a>
+                        <ul class="dropdown-content">
+                            <li><a name="udv" style="background: url('skin/basic.png');background-repeat: no-repeat;">USER(),DATABASE(),VERSION()</a></li>
+                            <li><a name="countdb1" style="background: url('skin/basic.png');background-repeat: no-repeat;">Count() DATABASES</a></li>
+                            <li><a name="ispriv" style="background: url('skin/database.png');background-repeat: no-repeat;">via I_S.PRIVILEDGES</a></li>
+                            <li><a name="msst" style="background: url('skin/database.png');background-repeat: no-repeat;">via MySQL SYSTEM TABLE</a></li>
+                            <li><a name="grq" style="background: url('skin/mysql.png');background-repeat: no-repeat;">Getting running query</a></li>
+                        </ul>
+                        </li>
+                        
+                        <li><a class="rightarrow" name="unstmt">Databases</a>
+                        <ul class="dropdown-content">
+                            <li><a name="dn_groupconc" style="background: url('skin/basic.png');background-repeat: no-repeat;">DATABASE_NAMES group_concat()</a></li>
+                            <li><a name="dn_oneshot" style="background: url('skin/basic.png');background-repeat: no-repeat;">DATABASE_NAMES one shot()</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">Tables</a>
+                        <ul class="dropdown-content">
+                            <li><a name="tn_groupconc" style="background: url('skin/tables.png');background-repeat: no-repeat;">TABLE_NAMES group_concat()</a></li>
+                            <li><a name="tn_oneshot" style="background: url('skin/tables.png');background-repeat: no-repeat;">TABLE_NAMES one shot()</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">Columns</a>
+                        <ul class="dropdown-content">
+                            <li><a name="cn_groupconc" style="background: url('skin/columns.png');background-repeat: no-repeat;">COLUMN_NAMES group_concat()</a></li>
+                            <li><a name="cn_oneshot" style="background: url('skin/columns.png');background-repeat: no-repeat;">COLUMN_NAMES one shot()</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">Data</a>
+                        <ul class="dropdown-content">
+                            <li><a name="d_groupconc" style="background: url('skin/data.png');background-repeat: no-repeat;">DATA group_concat()</a></li>
+                            <li><a name="d_oneshot" style="background: url('skin/data.png');background-repeat: no-repeat;">DATA one shot()</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">DIOS MySQL</a>
+                        <ul class="dropdown-content">
+                            <li><a name="db_madblood" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Madblood</a></li>
+                            <li><a name="db_tpro" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by T-pro</a></li>
+                            <li><a name="db_zen" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Zen</a></li>
+                            <li><a name="db_makmanwaf" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by MakMan</a></li>
+                            <li><a name="db_trojanwaf" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by tr0jan WAF</a></li>
+                            <li><a name="db_madbloodwaf1" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Madblood WAf</a></li>
+                            <li><a name="db_madbloodwaf2" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Madblood WAF @x</a></li>
+                            <li><a name="db_trojbenchmark" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by tr0jan Benchmark()</a></li>
+                            <li><a name="db_rooth3x49" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by r0ot@h3x49</a></li>
+                            <li><a name="db_replace" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Replace</a></li>
+                            <li><a name="db_makman" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by MakMan</a></li>
+                            <li><a name="db_ajkaro" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Ajkaro</a></li>
+                            <li><a name="db_zenwaf" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Zen WAF</a></li>
+                            <li><a name="db_waf" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS WAF</a></li>
+                            <li><a name="db_rummy" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Rummy </a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">DIOS PostgreSQL</a>
+                        <ul class="dropdown-content">
+                            <li><a name="postgre84" style="background: url('skin/data.png');background-repeat: no-repeat;">FOR POSTGRE 8.4</a></li>
+                            <li><a name="postgre91" style="background: url('skin/data.png');background-repeat: no-repeat;">FOR POSTGRE 9.1</a></li>
+                            <li><a name="postgreall" style="background: url('skin/data.png');background-repeat: no-repeat;">ALL VERSION</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">DIOS MsSQL</a>
+                        <ul class="dropdown-content">
+                            <li><a name="db_rummy_zen" style="background: url('skin/data.png');background-repeat: no-repeat;">DIOS by Rummy/Zen</a></li>
+                        </ul>
+                        </li>
+                        
+                        <li><a class="rightarrow" name="unstmt">DIOS PostgreSQL</a>
+                        <ul class="dropdown-content">
+                            <li><a name="db_names1" style="background: url('skin/data.png');background-repeat: no-repeat;">DB Names</a></li>
+                            <li><a name="db_count1" style="background: url('skin/data.png');background-repeat: no-repeat;">DB Count</a></li>
+                            <li><a name="pdbtc" style="background: url('skin/data.png');background-repeat: no-repeat;">Primary DB Tables Count</a></li>
+                            <li><a name="pdbcc" style="background: url('skin/data.png');background-repeat: no-repeat;">Primary DB Columns Count</a></li>
+                            <li><a name="idbtc" style="background: url('skin/data.png');background-repeat: no-repeat;">InfoSchema DB Tables Count</a></li>
+                            <li><a name="icc" style="background: url('skin/data.png');background-repeat: no-repeat;">InfoSchema columns Count</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="downarrow2 grey " name="unbased">ERROR/DOUBLE QUERY</a>
+                	<ul class="dropdown-content">
+                		<li><a class="rightarrow" name="unstmt">Error Based</a>
+                        <ul class="dropdown-content">
+                            <li><a name="getversion1" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Version</a></li>
+                            <li><a name="getdb" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Database</a></li>
+                            <li><a name="gettable1" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get Tables</a></li>
+                            <li><a name="getcolumn1" style="background: url('skin/columns.png');background-repeat: no-repeat;">Get Columns</a></li>
+                            <li><a name="getdata1" style="background: url('skin/data.png');background-repeat: no-repeat;">Get Data</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">POLYGON/  MULTIPOINT</a>
+                        <ul class="dropdown-content">
+                            <li><a name="getversion2" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Version</a></li>
+                            <li><a name="gettable2" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get Tables</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">MULTIPOINT DIOS</a>
+                        <ul class="dropdown-content">
+                            <li><a name="dios11" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 1.</a></li>
+							<li><a name="dios12" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 2.</a></li>
+							<li><a name="dios13" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 3.</a></li>
+							<li><a name="dios14" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 4.</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">Advanced Error Based (MySQL>=5.5)</a>
+                        <ul class="dropdown-content">
+                            <li><a name="getversion3" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Version</a></li>
+                            <li><a name="gettable3" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get Tables</a></li>
+                        </ul>
+                        </li>
+
+                        <li><a class="rightarrow" name="unstmt">DIOS by MadBlood (MySQL>=5.5)</a>
+                        <ul class="dropdown-content">
+                            <li><a name="dios21" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 1.</a></li>
+							<li><a name="dios22" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 2.</a></li>
+							<li><a name="dios23" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 3.</a></li>
+							<li><a name="dios24" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 4.</a></li>
+							<li><a name="dios25" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 5.</a></li>
+							<li><a name="dios26" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 6.</a></li>
+							<li><a name="dios27" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 7.</a></li>
+							<li><a name="dios28" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 8.</a></li>
+							<li><a name="dios29" style="background: url('skin/tables.png');background-repeat: no-repeat;">DIOS 9.</a></li>
+                        </ul>
+                        </li>
+                        
+                        <li><a class="rightarrow" name="unstmt">Double Query Based</a>
+                        <ul class="dropdown-content">
+                            <li><a name="getversion4" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Version</a></li>
+                            <li><a name="getdb2" style="background: url('skin/basic.png');background-repeat: no-repeat;">Get Database</a></li>
+                            <li><a name="gettable4" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get Tables</a></li>
+                            <li><a name="getcolumn2" style="background: url('skin/columns.png');background-repeat: no-repeat;">Get Columns</a></li>
+                            <li><a name="getdata2" style="background: url('skin/data.png');background-repeat: no-repeat;">Get Data</a></li>
+                        </ul>
+                        </li>
+                	</ul>
+                </li>
+
+                <li id="wafdown"><a class="downarrow2 grey" name="unbased">WAF BYPASS</a>
+                	<ul class="dropdown-content">
+                		<li><a name="waf1" style="background: url('skin/waf_set.png');background-repeat: no-repeat;">/*_STRING_*/</a></li>
+                		<li><a name="waf2" style="background: url('skin/waf_set.png');background-repeat: no-repeat;">/*!5000_STRING_*/</a></li>
+                		<li><a name="waf3" style="background: url('skin/waf_set.png');background-repeat: no-repeat;">/*!12345_STRING_*/</a></li>
+                		<li><a name="waf4" style="background: url('skin/waf_set.png');background-repeat: no-repeat;">/*!13337_STRING_*/</a></li>
+                		<li><a name="waf5" style="background: url('skin/waf_set.png');background-repeat: no-repeat;">cutoffCUTOFFWAFwaf</a></li>
+
+                		<li><a class="rightarrow" name="unstmt">WAF-SETS</a>
+                        <ul class="dropdown-content" style="right: 100px; left: auto;">
+                            <li><a name="waf_gett" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get tables GROUP_CONCAT</a></li>
+                            <li><a name="waf_getc" style="background: url('skin/columns.png');background-repeat: no-repeat;">Get columns GROUP_CONCAT</a></li>
+                            <li><a name="waf_gettos" style="background: url('skin/tables.png');background-repeat: no-repeat;">Get tables One shot </a></li>
+                            <li><a name="waf_getcos" style="background: url('skin/columns.png');background-repeat: no-repeat;">Get columns One shot</a></li>                            
+                        </ul>
+                        </li>               
+                	</ul>
+                </li>
+                <!--
+                <li style="margin-top: 5px;"><a class="downarrow" name="unbased">ENCODING</a>
+                	<ul class="dropdown-content">
+                		<li><a name="waf1" style="background: url('skin/uue.png');background-repeat: no-repeat;">Base64 Encode</a></li>
+                		<li><a name="waf2" style="background: url('skin/uud.png');background-repeat: no-repeat;">Base64 Decode</a></li>
+                		<li><a name="waf3" style="background: url('skin/urle.png');background-repeat: no-repeat;">URL Encode</a></li>
+                		<li><a name="waf4" style="background: url('skin/urld.png');background-repeat: no-repeat;">URL Decode</a></li>
+
+                		<li><a class="rightarrow" name="unstmt">HEX Encoding</a>
+                        <ul class="dropdown-content">
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">String to 00ff00ff</a></li>
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">String to 00 ff 00 ff</a></li>
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">String to 00:ff:00:ff</a></li>
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">INT to HEX</a></li>                            
+                        </ul>
+                        </li>   
+
+                        <li><a class="rightarrow" name="unstmt">HEX Decoding</a>
+                        <ul class="dropdown-content">
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">HEX to INT</a></li>
+                            <li><a name=ob style="background: url('skin/string.png');background-repeat: no-repeat;">HEX to CHAR</a></li> 
+                        </ul>
+                        </li>                       
+                	</ul>
+                </li>
+
+            -->
+
+                <li style="margin-top: 5px;"><a class="grey downarrow" name="unbased">HTML</a>
+                	<ul class="dropdown-content">
+                		<li><a name="html0" style="background: url('skin/xss.png');background-repeat: no-repeat;">Break Row.</a></li>
+						<li><a name="html1" style="background: url('skin/xss.png');background-repeat: no-repeat;">Sepratoe Break Row.</a></li>
+						<li><a name="html2" style="background: url('skin/xss.png');background-repeat: no-repeat;">List.</a></li>
+						<li><a name="html3" style="background: url('skin/xss.png');background-repeat: no-repeat;">Bold.</a></li>
+						<li><a name="html4" style="background: url('skin/xss.png');background-repeat: no-repeat;">Close Bold.</a></li>
+						<li><a name="html5" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Face Courier.</a></li>
+						<li><a name="html6" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Color Red.</a></li>
+						<li><a name="html7" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Color Blue.</a></li>
+						<li><a name="html8" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Color Green.</a></li>
+						<li><a name="html9" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Color Purple.</a></li>
+						<li><a name="html10" style="background: url('skin/xss.png');background-repeat: no-repeat;">Font Color Magenta.</a></li>
+						<li><a name="html11" style="background: url('skin/xss.png');background-repeat: no-repeat;">Close Font.</a></li>
+                	</ul>
+                </li>
+                <li style="margin-top: 5px;"><a class="grey downarrow" name="unbased">IMP Links</a>
+                	<ul class="dropdown-content">
+                		<li><a name="link1" style="background: url('skin/xss.png');background-repeat: no-repeat;">shadsidd</a></li>
+						<li><a name="link2" style="background: url('skin/xss.png');background-repeat: no-repeat;">shikari1337</a></li>
+						<li><a name="link3" style="background: url('skin/xss.png');background-repeat: no-repeat;">xmendez</a></li>
+						<li><a name="link4" style="background: url('skin/xss.png');background-repeat: no-repeat;">minimaxir</a></li>
+						<li><a name="link5" style="background: url('skin/xss.png');background-repeat: no-repeat;">xsscx</a></li>
+						<li><a name="link6" style="background: url('skin/xss.png');background-repeat: no-repeat;">TheRook</a></li>
+						<li><a name="link7" style="background: url('skin/xss.png');background-repeat: no-repeat;">danielmiessler</a></li>
+						<li><a name="link8" style="background: url('skin/xss.png');background-repeat: no-repeat;">FireFart</a></li>
+						<li><a name="link9" style="background: url('skin/xss.png');background-repeat: no-repeat;">HybrisDisaster</a></li>
+						<li><a name="link10" style="background: url('skin/xss.png');background-repeat: no-repeat;">TeamUltimate</a></li>
+                	</ul>
+                </li>
+
+             </ul>
+        </nav>
+    </div>
+    <div>
+    	<button class="loadurl">Load</button>
+        <button class="split">Split</button>
+        <button class="execute">Run</button>
+        <input type="button" class="btn" style="background: url('skin/plus.gif');background-repeat: no-repeat;height: 20px;background-size: 60%" value=" ">
+     	<input type="button" class="btn" style="background: url('skin/minus.gif');background-repeat: no-repeat;height: 20px;background-size: 60%" value=" ">
+    </div>
+    <textarea id="marea" spellcheck="false" class="urlfield"></textarea><br>
+    <div><label><input type="checkbox" name="enablepostdata" value="">Enable Post Data</label></div>
+    <textarea spellcheck="false" class="postdatafield hiddenfield"></textarea>
+    <div><label><input type="checkbox" name="enablereferer" value="">Enable Referer</label></div>
+
+    <div>
+    	 <input id="hex_leftarrow" type="button" class="btn btnbg_left" style="margin-left: 5px;" value=" ">
+    	 <label>0xHEX</label>
+     	 <input id="hex_rightarrow" type="button" class="btn btnbg_right">
+     	 <input id="url_leftarrow" type="button" class="btn btnbg_left" >
+    	 <label>%URL</label> 
+     	 <input id="url_rightarrow" type="button" class="btn btnbg_right">
+     	 <input id="base_leftarrow" type="button" class="btn btnbg_left">
+    	 <label>BASE64</label> 
+     	 <input id="base_rightarrow" type="button" class="btn btnbg_right">
+    </div>
+    <div>
+    	<input name="taleft" type="textarea" placeholder="string to replace " style="height: 20px;width: 100px;margin-left: 5px;" >
+    	<input name="taright" type="textarea" placeholder="replacing string " style="height: 20px;width: 100px;margin-left: 5px;" >
+    	<input type="checkbox" name="replaceall" style="margin-top: 5px"><label style="margin-left: 0px;" for="replaceall"> Replace All</label>
+     	<input id="rep_btn" type="button" class="btn btnbg_right">
+    </div>
+
+    <textarea spellcheck="false" class="refererfield hiddenfield"></textarea>
+    <div class="footer" style="color: white;text-align: center;">
+        Modified by <a style="color: aqua;" href="https://twitter.com/rushic24">r4#51(codeblooded)</a>,credits to <a style="color: aqua;">c1ph3r</a> for payloads<a href="#" target="_blank"></a><br> My Github: <a style="color: aqua;" href="https://github.com/rushic24">https://github.com/rushic24</a><br><a>Contact rushic24@gmail.com for bugs/request new changes </a>
+    </div>
+    <script src="hackbar.js"></script>
+    <script src="Encrypt.js"></script>
+    <script src="SQL.js"></script>
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
