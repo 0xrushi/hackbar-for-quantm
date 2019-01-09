@@ -2,7 +2,7 @@
 
 HackBar Quantum is a sidebar that assists you with web application security testing, it's aim is to help make those tedious tasks a little bit easier. This add-on is a predecessor to the original HackBar that is not compatible with Firefox Quantum.
 
-This is still a new project, so there will more than likely be lots of bugs, and missing features, if you would like to report a bug or have any suggestions, you can reach me on twitter [@totallynotdls](https://twitter.com/totallynotdls)
+This is still a new project, so there will more than likely be lots of bugs, and missing features.
 
 ## Features
 * MD5, SHA1, SHA256 Hashing Algorithms
