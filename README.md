@@ -17,3 +17,6 @@ This is still a new project, so there will more than likely be lots of bugs, and
 * XSS assistance (String.fromCharCode generation, HTML Characters and XSS Alert generation)
 * Auto-XSS (Scrapes possible parameters and tests them for XSS (either using a Custom payload or a Polygot))
 * SQL Injection Assistance
+
+
+![](https://rushichaudhari.github.io/images/hackbar.jpg)
